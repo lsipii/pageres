@@ -1,24 +1,24 @@
 import { promisify } from "util";
 import { parse as parseUrl } from "url"; // eslint-disable-line node/no-deprecated-api
-import path = require("path");
-import fs = require("fs");
-import os = require("os");
+import path from "path";
+import fs from "fs";
+import os from "os";
 import { EventEmitter } from "events";
-import pMemoize = require("p-memoize");
-import filenamify = require("filenamify");
+import pMemoize from "p-memoize";
+import filenamify from "filenamify";
 import unusedFilename from "unused-filename";
-import arrayUniq = require("array-uniq");
-import arrayDiffer = require("array-differ");
-import dateFns = require("date-fns");
-import getResolutions = require("get-res");
-import logSymbols = require("log-symbols");
-import makeDir = require("make-dir");
+import arrayUniq from "array-uniq";
+import arrayDiffer from "array-differ";
+import dateFns from "date-fns";
+import getResolutions from "get-res";
+import logSymbols from "log-symbols";
+import makeDir from "make-dir";
 import captureWebsite from "capture-website";
-import viewportList = require("viewport-list");
-import template = require("lodash.template");
-import plur = require("plur");
-import filenamifyUrl = require("filenamify-url");
-import pMap = require("p-map");
+import viewportList from "viewport-list";
+import template from "lodash.template";
+import plur from "plur";
+import filenamifyUrl from "filenamify-url";
+import pMap from "p-map";
 
 // TODO: Move this to `type-fest`
 type Mutable<ObjectType> = {
