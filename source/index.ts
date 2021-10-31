@@ -534,7 +534,3 @@ export default class Pageres extends EventEmitter {
 		return screenshot;
 	}
 }
-
-// For CommonJS default export support
-module.exports = Pageres;
-module.exports.default = Pageres;
